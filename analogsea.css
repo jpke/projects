@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  background: cornflowerblue;
+  width: 100%;
+  height: 1070px;
+  text-align: center;
+  font-family: Verdana;
+}
+
+.logo {
+  height: 75px;
+  padding: 20px 0;
+
+}
+
+.signup_form {
+  width: 400px;
+  height: 450px;
+  background: white;
+  margin-top: -22px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+}
+
+.signup_form h1 {
+  font-weight: 300;
+  padding-top: 40px;
+  color: darkgreen;
+  font-size: 30px;
+}
+
+.signup_form section {
+  padding: 0 40px;
+  text-align: left;
+}
+
+.signup_form label {
+  display: block;
+  padding: 15px 0;
+  
+}
+
+.signup_form input {
+  padding: 15px;
+  font-size: 16px;
+  border: 2px solid lightgray;
+  width: 320px;
+  height: 55px;
+  border-radius: 5px;
+}
+
+.signup_form input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: gray;
+}
+
+.signup_form input::-moz-placeholder { /* Firefox 19+ */
+  color: gray;
+}
+
+.signup_form input:-ms-input-placeholder { /* IE 10+ */
+  color: gray;
+}
+
+.signup_form input:-moz-placeholder { /* Firefox 18- */
+  color: gray;
+}
+
+.signup_form button {
+  background: burlywood;
+  color: white;
+  height: 55px;
+  width: 320px;
+  margin-top: 15px;
+  font-size: 22px;
+  border: 2px solid burlywood;
+  border-radius: 5px;
+}
+
+.signup_form button:hover {
+  background: green;
+  border: 2px solid green;
+}
+
+.signup_form a {
+  display: block;
+  padding: 10px;
+  font-size: 12px;
+}
+
+.have_account, .have_account a {
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+}
