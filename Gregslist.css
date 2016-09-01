@@ -1,0 +1,109 @@
+header {
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  background: aqua;
+}
+
+.title {
+  font-weight: normal;
+  font-size: 20px;
+  padding-left: 10px;
+}
+
+.nav_head {
+	text-align: right;
+	position: absolute;
+  right: 10px;
+  top: 18px;
+
+}
+
+.header_nav {
+  position: relative;
+  font-weight: normal;
+  font-size: 20px;
+  padding-right: 5px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+main {
+  margin: 100px;
+}
+
+form input {
+  width: 300px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  padding: 2px 0 2px 5px;
+  color: lightgrey;
+  font-size: 15px;
+}
+
+form button {
+  height: 25px;
+  width: 30px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  background: white;
+}
+
+.results_nav {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: inline-block;
+  font-size: 0;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+}
+
+.results_nav a {
+  display: inline-block;
+  font-size: 15px;
+  padding: 5px 10px;
+  color: black;
+}
+
+.results_nav span {
+  font-size: 15px;
+  display: inline;
+  padding: 5px 20px;
+  border-left: 1px solid lightgrey;
+  border-right: 1px solid lightgrey;
+  margin-left: 0px;
+}
+
+.results {
+  list-style: none;
+  padding: 0;
+}
+
+.result_listing button {
+  display: inline-block;
+  border: none;
+  background-color: white;
+  font-size: 16px;
+  margin-left: -10px;
+}
+
+.fa-star {
+  color: lightgray;
+}
+
+.result_listing p {
+  display: inline-block;
+  color: lightgray;
+}
+
+.result_listing a {
+  padding: 0 10px;
+  font-weight: bold;
+}
