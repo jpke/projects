@@ -7,12 +7,26 @@ $(document).ready(function() {
 		$('.ryu-ready').hide();
 		$('.ryu-still').show();
 	}).mousedown(function() {
+		playHadouken();
 		$('.ryu-ready').hide();
 		$('.ryu-throwing').show();
-		$('.hadouken').show();
-		$('')
+		$('.hadouken').finish().show().animate(
+			{'left': '1030px'}, 
+			500, 
+			function() {
+				$('.hadouken').hide();
+				$('.hadouken').css(
+					{'left': '530px'});
+			}
+		);
 	}).mouseup(function() {
 		$('.ryu-throwing').hide();
 		$('.ryu-ready').show();
 	});
 });
+
+function playHadouken() {
+	$('#hadouken-sound')[0].volume=0.5;
+	$('#hadouken-sound')[0].load();
+	$('#hadouken-sound')[0].play();
+};
