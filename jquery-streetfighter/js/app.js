@@ -24,7 +24,30 @@ $(document).ready(function() {
 		$('.ryu-ready').show();
 	});
 
-	/*$('.ryu').keydown(function(e) {
+$(document).keydown(function(e) {
+		if (e.keyCode == 88) {
+			$('.ryu-ready').hide();
+			$('.ryu-still').hide();
+			$('.ryu-cool').show();
+		}
+	})
+	.keyup(function(e) {
+		if (e.keyCode == 88) {
+			/* Attempt to select ready or still pose */
+			// if($('.ryu').mouseover(function() {
+			// 	alert("mouseover true");
+			// 	return true;
+			// 	})
+			// ) {
+				$('.ryu-cool').hide();
+				$('.ryu-ready').show();
+			// } 
+				//else $(.'ryu-still').show();
+		}
+	});
+
+	/* Attemt to attach .ryu-cool on the fly:
+	$('.ryu').keydown(function(e) {
 		if(e.keyCode == 88) {
 			alert("X keydown");
 			$('.ryu-still').hide();
@@ -35,23 +58,23 @@ $(document).ready(function() {
 		};
 	});*/
 
-	$(document).keydown(function() {
-		$('.ryu-still').hide();
-		$('.ryu-ready').hide();
-		$('<div/>', {
-				'class':'ryu-cool',
-				'style': 'background-image: url("/images/ryu-cool.gif")',
-				'background-repeat': 'no-repeat',
-				'width': '659px',
-				'height': '494px'
-			}).appendTo('.ryu');
-	}); /*.keyup(function() {
-				$('.ryu-still').hide();
-				$('.ryu-ready').show();
-				$('.ryu-cool').detach();
-			});*/
+// 	$(document).keydown(function() {
+// 		$('.ryu-still').hide();
+// 		$('.ryu-ready').hide();
+// 		$('<div/>', {
+// 				'class':'ryu-cool',
+// 				'style': 'background-image: url("/images/ryu-cool.gif")',
+// 				'background-repeat': 'no-repeat',
+// 				'width': '659px',
+// 				'height': '494px'
+// 			}).appendTo('.ryu');
+// 	}); /*.keyup(function() {
+// 				$('.ryu-still').hide();
+// 				$('.ryu-ready').show();
+// 				$('.ryu-cool').detach();
+// 			});*/
 
-});
+	});
 
 function playHadouken() {
 	$('#hadouken-sound')[0].volume=0.5;
