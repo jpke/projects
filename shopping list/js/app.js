@@ -1,4 +1,5 @@
 $(document).ready(function() {
+
   $('#js-shopping-list-form').submit(function(event) {
 
     event.preventDefault();
@@ -17,5 +18,21 @@ $(document).ready(function() {
         '</div>' +
       "</li>"
       );
+    //reset form after submission
+    $('#js-shopping-list-form')[0].reset();
+      //could also use 'this'
+
+    //this works, but leaves suggestion list displayed below form input
+    //$('#js-shopping-list-form').trigger("reset");
   });
+
+    $('.shopping-list').on("click", ".shopping-item-toggle", function(event) {
+      $(this).parents("li").find(".shopping-item")
+        .toggleClass("shopping-item__checked");
+    });
+
+  $('.shopping-list').on("click", ".shopping-item-delete", function(event) {
+    $(this).parents("li").remove();
+  });
+
 });
