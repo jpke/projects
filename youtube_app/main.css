@@ -12,9 +12,21 @@
 
 .js-results {
   margin-top: 25px;
+  margin-left: 30px;
+  padding: 10px;
+}
+
+.more {
+  text-decoration: none;
+}
+
+#more {
+  margin-left: 10px;
+  margin-top: 10px;
 }
 
 li {
   list-style: none;
-  margin-left: 30px;
 }
+
+
